@@ -3,5 +3,6 @@ from flask import Flask
 app=Flask(__name__)
 
 @app.route("/")
-  def tutorial():
-    return f"<h1>hello</h1>"
+  def index():
+    names=["Alice","bob","charlie"]
+    return render_template("index.html",names=names)
