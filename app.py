@@ -1,7 +1,7 @@
-from flask import Flask,render_template,request
+from flask import Flask
 
 app=Flask(__name__)
 
 @app.route("/")
   def tutorial():
-    return render_template("tutorial.html")
+    return f"<h1>hello</h1>"
